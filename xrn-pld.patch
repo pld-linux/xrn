@@ -1,5 +1,5 @@
---- ./config.h.orig	Tue Jul 31 21:08:19 2001
-+++ ./config.h	Tue Jul 31 21:11:04 2001
+--- xrn-9.02/xrn-9.02/config.h.orig	Tue Jul 31 21:08:19 2001
++++ xrn-9.02/xrn-9.02/config.h	Tue Jul 31 21:11:04 2001
 @@ -34,7 +34,7 @@
   * config.h: configurable defaults
   */

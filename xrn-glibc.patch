@@ -1,5 +1,5 @@
---- xrn-9.01/clientlib.c.glibc	Thu Jun  5 07:11:40 1997
-+++ xrn-9.01/clientlib.c	Tue Dec 22 18:11:33 1998
+--- xrn-9.02/xrn-9.02/clientlib.c.glibc	Thu Jun  5 07:11:40 1997
++++ xrn-9.02/xrn-9.02/clientlib.c	Tue Dec 22 18:11:33 1998
 @@ -37,6 +37,7 @@
  #include <netinet/in.h>
  #include <arpa/inet.h>
@@ -24,8 +24,8 @@
  	}
      }
      return (buf);
---- xrn-9.01/utils.h.glibc	Mon Apr  6 07:41:06 1998
-+++ xrn-9.01/utils.h	Tue Dec 22 18:11:33 1998
+--- xrn-9.02/xrn-9.02/utils.h.glibc	Mon Apr  6 07:41:06 1998
++++ xrn-9.02/xrn-9.02/utils.h	Tue Dec 22 18:11:33 1998
 @@ -67,20 +67,6 @@
  #include <memory.h>
  #include <strings.h>
@@ -68,19 +68,8 @@
 -#endif
  
  #endif /* UTILS_H */
---- xrn-9.01/refile.c.glibc	Fri Jul  4 13:30:10 1997
-+++ xrn-9.01/refile.c	Tue Dec 22 18:11:33 1998
-@@ -57,8 +57,6 @@
- #include "mesg_strings.h"
- #include "refile.h"
- 
--extern char *strpbrk();
--
- #ifndef S_ISDIR
- #define S_ISDIR(mode) (((mode) & S_IFMT) == S_IFDIR)
- #endif
---- xrn-9.01/strstr.c.glibc	Tue Dec 22 18:12:57 1998
-+++ xrn-9.01/strstr.c	Tue Dec 22 18:13:47 1998
+--- xrn-9.02/xrn-9.02/strstr.c.glibc	Tue Dec 22 18:12:57 1998
++++ xrn-9.02/xrn-9.02/strstr.c	Tue Dec 22 18:13:47 1998
 @@ -13,21 +13,5 @@
  ===========================================================================
  */
