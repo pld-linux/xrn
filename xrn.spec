@@ -26,14 +26,14 @@ Install the xrn package if you need a simple news reader for X.
 
 %build
 xmkmf
-make CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
+%{__make} CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
 	CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/etc/X11/wmconfig
 
-make install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 cat > $RPM_BUILD_ROOT/etc/X11/wmconfig/xrn <<EOF
 xrn name "xrn"
