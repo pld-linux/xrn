@@ -1,18 +1,19 @@
 Summary:	An X Window System based news reader
 Summary(pl):	Czytnik newsów pod X Window System
 Name:		xrn
-Version:	9.01
+Version:	9.02
 Release:	3
 Copyright:	Distributable
 Group:		Applications/News
 Group(de):	Applikationen/News
 Group(pl):	Aplikacje/News
-Source0:	ftp://ftp.x.org/contrib/applications/xrn/%{name}-%{version}.tgz
-Patch0:		%{name}-rh.patch
+Source0:	ftp://sipb.mit.edu/pub/%{name}/%{name}-%{version}.tgz
+URL:		http://www.mit.edu/people/jik/software/xrn.html
+Patch0:		%{name}-pld.patch
 Patch1:		%{name}-glibc.patch
 Patch2:		%{name}-time.patch
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	XFree86-devel
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		/usr/X11R6/man
@@ -34,7 +35,7 @@ myszki.
 %patch2 -p1
 
 %build
-xmkmf
+xmkmf -a
 %{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
@@ -51,6 +52,8 @@ xrn group Utilities/News
 xrn exec "xrn &"
 EOF
 
+gzip -9nf COPYRIGHT COMMON-PROBLMS README README.Linux TODO ChangeLog
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -59,3 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/xrn
 %config %{_libdir}/X11/app-defaults/XRn
 %config %{_sysconfdir}/X11/wmconfig/xrn
+%doc *.gz
