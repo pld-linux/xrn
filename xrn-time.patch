@@ -1,0 +1,11 @@
+diff -Nur xrn-9.01.orig/server.c xrn-9.01/server.c
+--- xrn-9.01.orig/server.c	Tue May 12 19:00:50 1998
++++ xrn-9.01/server.c	Wed Apr  4 23:19:42 2001
+@@ -40,6 +40,7 @@
+ #include <ctype.h>
+ #include <assert.h>
+ #include <errno.h>
++#include <time.h>
+ #include "avl.h"
+ #include "news.h"
+ #include "artstruct.h"
