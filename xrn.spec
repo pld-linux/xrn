@@ -92,7 +92,7 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/News
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/News,%{_pixmapsdir}}
 
 %{__make} install install.man DESTDIR=$RPM_BUILD_ROOT
 
