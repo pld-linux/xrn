@@ -19,7 +19,7 @@ Summary(sv):	En nyhetslДsare fЖr X11
 Summary(zh_CN):	р╩╦Ж╩Ысз X ╢╟©зо╣мЁ╣дпбнетд╤афВ║ё
 Name:		xrn
 Version:	9.02
-Release:	12
+Release:	13
 License:	distributable
 Group:		Applications/News
 Source0:	ftp://sipb.mit.edu/pub/%{name}/%{name}-%{version}.tgz
@@ -77,7 +77,7 @@ O xrn И um leitor simples de 'news' da Usenet para o X Window System.
 Программа для чтения новостей в X Window System.
 
 %description -l zh_CN
-xrn йгр╩╦Жсцсз X ╢╟©зо╣мЁ╣д╪Р╣╔╣д Usenet пбнетд╤афВ║ё
+xrn йгр╩╦Жсцсз X ╢╟©зо╣мЁ╣д╪Р╣╔╣д Usenet пбнетд╤афВ║ё.
 
 %prep
 %setup -q
