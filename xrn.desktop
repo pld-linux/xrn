@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=XRN
+Type=Application
+Comment=The original X news reader
+Comment[de]=Der ursprüngliche Newsreader für X
+Comment[pl]=Czytnik news pod X
+Comment[sv]=Den ursprungliga diskussionsgruppsläsaren för X
+Exec=xrn
+# vi: encoding=utf-8
