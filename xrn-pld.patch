@@ -1,0 +1,20 @@
+--- ./config.h.orig	Tue Jul 31 21:08:19 2001
++++ ./config.h	Tue Jul 31 21:11:04 2001
+@@ -34,7 +34,7 @@
+  * config.h: configurable defaults
+  */
+ 
+-#ifndef CONFIG_H_IS_OK
++#ifndef CONFIG_H_IS_OK "PLD GNU/Linux"
+ #error "You must edit config.h appropriately for your site!"
+ #endif
+ 
+@@ -54,7 +54,7 @@
+  * from users at your site that you are capable of answering.
+  */
+ #ifndef GRIPES
+-#define GRIPES "bug-xrn@kamens.brookline.ma.us"
++#define GRIPES "bugs@pld.org.pl"
+ #endif
+ 
+ /*
