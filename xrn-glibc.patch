@@ -1,0 +1,105 @@
+--- xrn-9.01/clientlib.c.glibc	Thu Jun  5 07:11:40 1997
++++ xrn-9.01/clientlib.c	Tue Dec 22 18:11:33 1998
+@@ -37,6 +37,7 @@
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
+ #include <netdb.h>
++#include <string.h>
+ 
+ #ifdef notdef
+ #if defined(AF_DECnet) && defined(ultrix)
+@@ -91,13 +92,13 @@
+     static char	buf[256];
+ 
+     if ((cp = getenv("NNTPSERVER")) != 0) {
+-	(void) strcpy(buf, cp);
++	 strcpy(buf, cp);
+     } else {
+ 	cp = getinfofromfile(file);
+ 	if (cp == NULL) {
+ 	    return(NULL);
+ 	} else {
+-	    (void) strcpy(buf, cp);
++	    strcpy(buf, cp);
+ 	}
+     }
+     return (buf);
+--- xrn-9.01/utils.h.glibc	Mon Apr  6 07:41:06 1998
++++ xrn-9.01/utils.h	Tue Dec 22 18:11:33 1998
+@@ -67,20 +67,6 @@
+ #include <memory.h>
+ #include <strings.h>
+ 
+-/* Stupid SunOS header files are missing buttloads of declarations */
+-extern int printf(), fprintf(), fputc(), fputs(), fread(), fwrite(), sscanf();
+-extern int fgetc();
+-extern int fclose(), vfprintf(), vsprintf(), puts(), fscanf(), _filbuf();
+-extern int _flsbuf(), rewind(), fseek();
+-extern int toupper(), tolower();
+-extern time_t time();
+-extern int getdtablesize();
+-extern int system();
+-extern int read(), close(), fchmod(), rename();
+-extern int putenv();
+-extern int strcasecmp(), strncasecmp();
+-extern void bzero(), bcopy();
+-
+ #endif /* SOLARIS */
+ #endif /* sun */
+ 
+@@ -310,20 +296,5 @@
+ #endif
+ 
+ int utDigits _ARGUMENTS((long int));
+-
+-#ifdef BSD_BFUNCS
+-#ifndef memset
+-#define memset(_Str_, _Chr_, _Len_) bzero(_Str_, _Len_)
+-#endif
+-#ifndef memcpy
+-#define memcpy(_To_, _From_, _Len_) bcopy(_From_, _To_, _Len_)
+-#endif
+-#endif
+-
+-#if defined(BSD_BFUNCS) || defined(NO_MEMMOVE)
+-#ifndef memmove
+-#define memmove(_To_, _From_, _Len_) bcopy(_From_, _To_, _Len_)
+-#endif
+-#endif
+ 
+ #endif /* UTILS_H */
+--- xrn-9.01/refile.c.glibc	Fri Jul  4 13:30:10 1997
++++ xrn-9.01/refile.c	Tue Dec 22 18:11:33 1998
+@@ -57,8 +57,6 @@
+ #include "mesg_strings.h"
+ #include "refile.h"
+ 
+-extern char *strpbrk();
+-
+ #ifndef S_ISDIR
+ #define S_ISDIR(mode) (((mode) & S_IFMT) == S_IFDIR)
+ #endif
+--- xrn-9.01/strstr.c.glibc	Tue Dec 22 18:12:57 1998
++++ xrn-9.01/strstr.c	Tue Dec 22 18:13:47 1998
+@@ -13,21 +13,5 @@
+ ===========================================================================
+ */
+ 
+-char * strstr(s1, s2)
+-    register char CONST *s1;
+-    register char CONST *s2;
+-{
+-    register int n = strlen(s2);
+-
+-    if (! *s2)
+-	return (char *) s1;
+-
+-    while (*s1) {
+-	if (! strncmp(s2,s1,n))
+-	    return (char *) s1;
+-	s1++;
+-    }
+-    return((char *) 0);
+-}
+ #endif
+ 

@@ -1,0 +1,20 @@
+--- xrn-9.01/config.h.config	Sun Mar 22 22:21:34 1998
++++ xrn-9.01/config.h	Wed Sep  2 16:57:17 1998
+@@ -34,6 +34,8 @@
+  * config.h: configurable defaults
+  */
+ 
++#define CONFIG_H_IS_OK "Red Hat"
++
+ #ifdef OV_CAMBRIDGE
+ #define CONFIG_H_IS_OK
+ #endif
+@@ -58,7 +60,7 @@
+  * from users at your site that you are capable of answering.
+  */
+ #ifndef GRIPES
+-#define GRIPES "bug-xrn@kamens.brookline.ma.us"
++#define GRIPES "bugs@redhat.com"
+ #endif
+ 
+ /*
