@@ -3,7 +3,7 @@ Summary(pl):	Czytnik newsów pod X Window System
 Name:		xrn
 Version:	9.02
 Release:	3
-Copyright:	Distributable
+License:	distributable
 Group:		Applications/News
 Group(de):	Applikationen/News
 Group(pl):	Aplikacje/News
