@@ -23,6 +23,7 @@ Release:	13
 License:	distributable
 Group:		Applications/News
 Source0:	ftp://sipb.mit.edu/pub/%{name}/%{name}-%{version}.tgz
+# Source0-md5:	2920543df71c29fda8bb384a7c4f208b
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-pld.patch
