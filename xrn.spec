@@ -2,14 +2,15 @@ Summary:	An X Window System based news reader
 Summary(pl):	Czytnik newsów pod X Window System
 Name:		xrn
 Version:	9.02
-Release:	3
+Release:	11
 License:	distributable
 Group:		Applications/News
 Source0:	ftp://sipb.mit.edu/pub/%{name}/%{name}-%{version}.tgz
-URL:		http://www.mit.edu/people/jik/software/xrn.html
+Source1:	%{name}.desktop
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-glibc.patch
 Patch2:		%{name}-time.patch
+URL:		http://www.mit.edu/people/jik/software/xrn.html
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,18 +40,11 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/News
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-cat > $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig/xrn <<EOF
-xrn name "xrn"
-xrn description "X News Reader"
-xrn group Utilities/News
-xrn exec "xrn &"
-EOF
-
-gzip -9nf COPYRIGHT COMMON-PROBLMS README README.Linux TODO ChangeLog
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/News/xrn.spec
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/xrn
 %config %{_libdir}/X11/app-defaults/XRn
-%config %{_sysconfdir}/X11/wmconfig/xrn
-%doc *.gz
+%config %{_applnkdir}/Network/News/xrn.spec
+%doc COPYRIGHT COMMON-PROBLMS README README.Linux TODO ChangeLog
