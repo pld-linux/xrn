@@ -1,4 +1,5 @@
-Summary:	An X Window System based news reader.
+Summary:	An X Window System based news reader
+Summary(pl):	Czytnik newsów pod X Window System
 Name:		xrn
 Version:	9.01
 Release:	3
@@ -31,8 +32,8 @@ Install the xrn package if you need a simple news reader for X.
 
 %build
 xmkmf
-%{__make} CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
-	CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
+	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,8 +47,6 @@ xrn description "X News Reader"
 xrn group Utilities/News
 xrn exec "xrn &"
 EOF
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_bindir}/xrn
 
 %clean
 rm -rf $RPM_BUILD_ROOT
