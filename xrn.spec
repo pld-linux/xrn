@@ -9,7 +9,7 @@ Summary(is):	Fréttalesari fyrir X gluggakerfiğ
 Summary(it):	Un news reader basato su X Window
 Summary(ja):	X Window System ¥Ù¡¼¥¹¤Î¥Ë¥å¡¼¥¹¥ê¡¼¥À¡¼
 Summary(ko):	X À©µµ¿ì ½Ã½ºÅÛ ±â¹İ ´º½º ÀĞ±â ÇÁ·Î±×·¥
-Summary(no):	En nyhetsleser for X
+Summary(nb):	En nyhetsleser for X
 Summary(pl):	Czytnik newsów pod X Window System
 Summary(pt):	Um leitor de 'news' baseado no X Window System
 Summary(ru):	ğÒÏÇÒÁÍÍÁ ÄÌÑ ŞÔÅÎÉÑ ÎÏ×ÏÓÔÅÊ × X Window System
@@ -61,7 +61,7 @@ xrn è un news reader di Usenet per X Window.
 %description -l ja
 xrn ¤Ï X Window System ÍÑ¤Î¥·¥ó¥×¥ë¤Ê Usenet ¥Ë¥å¡¼¥¹¥ê¡¼¥À¤Ç¤¹¡£
 
-%description -l no
+%description -l nb
 xrn er et enkelt newsprogram for X.
 
 %description -l pl
