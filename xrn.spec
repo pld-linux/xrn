@@ -5,8 +5,6 @@ Version:	9.02
 Release:	3
 License:	distributable
 Group:		Applications/News
-Group(de):	Applikationen/News
-Group(pl):	Aplikacje/News
 Source0:	ftp://sipb.mit.edu/pub/%{name}/%{name}-%{version}.tgz
 URL:		http://www.mit.edu/people/jik/software/xrn.html
 Patch0:		%{name}-pld.patch
