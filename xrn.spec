@@ -7,7 +7,7 @@ Group:		Applications/News
 Source:		ftp://ftp.x.org/contrib/applications/xrn/%{name}-%{version}.tgz
 Patch0:		xrn-rh.patch
 Patch1:		xrn-glibc.patch 
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		/usr/X11R6/man
