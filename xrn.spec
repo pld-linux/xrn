@@ -32,8 +32,6 @@ URL:		http://www.mit.edu/people/jik/software/xrn.html
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		/usr/X11R6/man
 
 %description
 A simple Usenet News reader for the X Window System. xrn allows you to
