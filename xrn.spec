@@ -22,7 +22,10 @@ A simple Usenet News reader for the X Window System. Xrn allows you to
 point and click your way through reading, replying and posting news
 messages.
 
-Install the xrn package if you need a simple news reader for X.
+%description -l pl
+Xrn to prosty czytnik news dla X Window System. Xrn pozwala ci na
+czytanie artyku³ów, odpowiadanie na nie i wysy³anie nowych przy pomocy
+myszki.
 
 %prep
 %setup -q -c
