@@ -19,10 +19,10 @@ Summary(sv):	En nyhetsl鋝are f鰎 X11
 Summary(zh_CN):	一个基于 X 窗口系统的新闻阅读器。
 Name:		xrn
 Version:	9.02
-Release:	13
+Release:	14
 License:	distributable
 Group:		Applications/News
-Source0:	ftp://sipb.mit.edu/pub/%{name}/%{name}-%{version}.tgz
+Source0:	ftp://sipb.mit.edu/pub/xrn/%{name}-%{version}.tgz
 # Source0-md5:	2920543df71c29fda8bb384a7c4f208b
 Source1:	%{name}.desktop
 Source2:	%{name}.png
@@ -31,8 +31,13 @@ Patch1:		%{name}-glibc.patch
 Patch2:		%{name}-time.patch
 URL:		http://www.mit.edu/people/jik/software/xrn.html
 BuildRequires:	XFree86-devel
+BuildRequires:	bison
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_xbindir	/usr/X11R6/bin
+%define	 	_appdefsdir	/usr/X11R6/lib/X11/app-defaults
+%define		_mandir		/usr/X11R6/man
 
 %description
 A simple Usenet News reader for the X Window System. xrn allows you to
@@ -91,11 +96,12 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/News,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} install install.man DESTDIR=$RPM_BUILD_ROOT
+%{__make} install install.man \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/News/xrn.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/xrn.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/xrn.png
 
 %clean
@@ -104,8 +110,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYRIGHT COMMON-PROBLMS README README.Linux TODO ChangeLog
-%attr(755,root,root) %{_bindir}/xrn
-%config %{_libdir}/X11/app-defaults/XRn
-%{_applnkdir}/Network/News/xrn.desktop
+%attr(755,root,root) %{_xbindir}/xrn
+%config %{_appdefsdir}/XRn
+%{_desktopdir}/xrn.desktop
 %{_pixmapsdir}/xrn.png
 %{_mandir}/man1/*
