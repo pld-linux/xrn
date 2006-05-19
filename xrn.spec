@@ -35,9 +35,7 @@ BuildRequires:	bison
 BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_xbindir	/usr/X11R6/bin
 %define	 	_appdefsdir	/usr/X11R6/lib/X11/app-defaults
-%define		_mandir		/usr/X11R6/man
 
 %description
 A simple Usenet News reader for the X Window System. xrn allows you to
@@ -91,7 +89,8 @@ xrn 是一个用于 X 窗口系统的简单的 Usenet 新闻阅读器。.
 
 %build
 xmkmf -a
-%{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
+%{__make} \
+	CC="%{__cc}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
@@ -99,7 +98,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install install.man \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	BINDIR=%{_bindir} \
+	MANDIR=%{_mandir}/man1
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/xrn.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/xrn.png
@@ -110,8 +111,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYRIGHT COMMON-PROBLMS README README.Linux TODO ChangeLog
-%attr(755,root,root) %{_xbindir}/xrn
-%config %{_appdefsdir}/XRn
+%attr(755,root,root) %{_bindir}/xrn
+%{_appdefsdir}/XRn
 %{_desktopdir}/xrn.desktop
 %{_pixmapsdir}/xrn.png
 %{_mandir}/man1/*
