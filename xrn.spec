@@ -1,22 +1,22 @@
 Summary:	An X Window System based news reader
-Summary(cs):	Jednoduchı Newsovı klient pro X Window System
-Summary(da):	En X-vinduessystembaseret nyhedslæser
-Summary(de):	Ein Newsreader für das X Window System
-Summary(es):	Lector de noticias para X Window
-Summary(fr):	Lecteur de nouvelles Usenet pour le système X Window
-Summary(id):	News reader yang berbasiskan X Window System
-Summary(is):	Fréttalesari fyrir X gluggakerfiğ
-Summary(it):	Un news reader basato su X Window
-Summary(ja):	X Window System ¥Ù¡¼¥¹¤Î¥Ë¥å¡¼¥¹¥ê¡¼¥À¡¼
-Summary(ko):	X À©µµ¿ì ½Ã½ºÅÛ ±â¹İ ´º½º ÀĞ±â ÇÁ·Î±×·¥
-Summary(nb):	En nyhetsleser for X
-Summary(pl):	Czytnik newsów pod X Window System
-Summary(pt):	Um leitor de 'news' baseado no X Window System
-Summary(ru):	ğÒÏÇÒÁÍÍÁ ÄÌÑ ŞÔÅÎÉÑ ÎÏ×ÏÓÔÅÊ × X Window System
-Summary(sk):	Program na èítanie diskusnıch skupín pre systém X Window
-Summary(sl):	Bralnik novi za Okna X
-Summary(sv):	En nyhetsläsare för X11
-Summary(zh_CN):	Ò»¸ö»ùÓÚ X ´°¿ÚÏµÍ³µÄĞÂÎÅÔÄ¶ÁÆ÷¡£
+Summary(cs.UTF-8):   JednoduchÃ½ NewsovÃ½ klient pro X Window System
+Summary(da.UTF-8):   En X-vinduessystembaseret nyhedslÃ¦ser
+Summary(de.UTF-8):   Ein Newsreader fÃ¼r das X Window System
+Summary(es.UTF-8):   Lector de noticias para X Window
+Summary(fr.UTF-8):   Lecteur de nouvelles Usenet pour le systÃ¨me X Window
+Summary(id.UTF-8):   News reader yang berbasiskan X Window System
+Summary(is.UTF-8):   FrÃ©ttalesari fyrir X gluggakerfiÃ°
+Summary(it.UTF-8):   Un news reader basato su X Window
+Summary(ja.UTF-8):   X Window System ãƒ™ãƒ¼ã‚¹ã®ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒªãƒ¼ãƒ€ãƒ¼
+Summary(ko.UTF-8):   X ìœˆë„ìš° ì‹œìŠ¤í…œ ê¸°ë°˜ ë‰´ìŠ¤ ì½ê¸° í”„ë¡œê·¸ë¨
+Summary(nb.UTF-8):   En nyhetsleser for X
+Summary(pl.UTF-8):   Czytnik newsÃ³w pod X Window System
+Summary(pt.UTF-8):   Um leitor de 'news' baseado no X Window System
+Summary(ru.UTF-8):   ĞŸÑ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ° Ğ´Ğ»Ñ Ñ‡Ñ‚ĞµĞ½Ğ¸Ñ Ğ½Ğ¾Ğ²Ğ¾ÑÑ‚ĞµĞ¹ Ğ² X Window System
+Summary(sk.UTF-8):   Program na ÄÃ­tanie diskusnÃ½ch skupÃ­n pre systÃ©m X Window
+Summary(sl.UTF-8):   Bralnik novi za Okna X
+Summary(sv.UTF-8):   En nyhetslÃ¤sare fÃ¶r X11
+Summary(zh_CN.UTF-8):   ä¸€ä¸ªåŸºäº X çª—å£ç³»ç»Ÿçš„æ–°é—»é˜…è¯»å™¨ã€‚
 Name:		xrn
 Version:	9.02
 Release:	14
@@ -42,44 +42,44 @@ A simple Usenet News reader for the X Window System. xrn allows you to
 point and click your way through reading, replying and posting news
 messages.
 
-%description -l cs
-xrn je jednoduchı klient pro ètení Usenet News v prostøedí X Window System.
+%description -l cs.UTF-8
+xrn je jednoduchÃ½ klient pro ÄtenÃ­ Usenet News v prostÅ™edÃ­ X Window System.
 
-%description -l da
+%description -l da.UTF-8
 xrn er et simpelt nyhedsprogram for X.
 
-%description -l de
-xrn ist ein einfacher Usenet News reader für das X Window System.
+%description -l de.UTF-8
+xrn ist ein einfacher Usenet News reader fÃ¼r das X Window System.
 
-%description -l es
+%description -l es.UTF-8
 xrn es un lector sencillo de noticias USENET para X Window.
 
-%description -l fr
-xrn est un lecteur de nouvelles Usenet simple pour le système
+%description -l fr.UTF-8
+xrn est un lecteur de nouvelles Usenet simple pour le systÃ¨me
 X Window.
 
-%description -l it
-xrn è un news reader di Usenet per X Window.
+%description -l it.UTF-8
+xrn Ã¨ un news reader di Usenet per X Window.
 
-%description -l ja
-xrn ¤Ï X Window System ÍÑ¤Î¥·¥ó¥×¥ë¤Ê Usenet ¥Ë¥å¡¼¥¹¥ê¡¼¥À¤Ç¤¹¡£
+%description -l ja.UTF-8
+xrn ã¯ X Window System ç”¨ã®ã‚·ãƒ³ãƒ—ãƒ«ãª Usenet ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒªãƒ¼ãƒ€ã§ã™ã€‚
 
-%description -l nb
+%description -l nb.UTF-8
 xrn er et enkelt newsprogram for X.
 
-%description -l pl
+%description -l pl.UTF-8
 xrn to prosty czytnik news dla X Window System. xrn pozwala na
-czytanie artyku³ów, odpowiadanie na nie i wysy³anie nowych przy pomocy
+czytanie artykuÅ‚Ã³w, odpowiadanie na nie i wysyÅ‚anie nowych przy pomocy
 myszki.
 
-%description -l pt
-O xrn é um leitor simples de 'news' da Usenet para o X Window System.
+%description -l pt.UTF-8
+O xrn Ã© um leitor simples de 'news' da Usenet para o X Window System.
 
-%description -l ru
-ğÒÏÇÒÁÍÍÁ ÄÌÑ ŞÔÅÎÉÑ ÎÏ×ÏÓÔÅÊ × X Window System.
+%description -l ru.UTF-8
+ĞŸÑ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ° Ğ´Ğ»Ñ Ñ‡Ñ‚ĞµĞ½Ğ¸Ñ Ğ½Ğ¾Ğ²Ğ¾ÑÑ‚ĞµĞ¹ Ğ² X Window System.
 
-%description -l zh_CN
-xrn ÊÇÒ»¸öÓÃÓÚ X ´°¿ÚÏµÍ³µÄ¼òµ¥µÄ Usenet ĞÂÎÅÔÄ¶ÁÆ÷¡£.
+%description -l zh_CN.UTF-8
+xrn æ˜¯ä¸€ä¸ªç”¨äº X çª—å£ç³»ç»Ÿçš„ç®€å•çš„ Usenet æ–°é—»é˜…è¯»å™¨ã€‚.
 
 %prep
 %setup -q
