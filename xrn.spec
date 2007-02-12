@@ -1,22 +1,22 @@
 Summary:	An X Window System based news reader
-Summary(cs.UTF-8):   Jednoduchý Newsový klient pro X Window System
-Summary(da.UTF-8):   En X-vinduessystembaseret nyhedslæser
-Summary(de.UTF-8):   Ein Newsreader für das X Window System
-Summary(es.UTF-8):   Lector de noticias para X Window
-Summary(fr.UTF-8):   Lecteur de nouvelles Usenet pour le système X Window
-Summary(id.UTF-8):   News reader yang berbasiskan X Window System
-Summary(is.UTF-8):   Fréttalesari fyrir X gluggakerfið
-Summary(it.UTF-8):   Un news reader basato su X Window
-Summary(ja.UTF-8):   X Window System ベースのニュースリーダー
-Summary(ko.UTF-8):   X 윈도우 시스템 기반 뉴스 읽기 프로그램
-Summary(nb.UTF-8):   En nyhetsleser for X
-Summary(pl.UTF-8):   Czytnik newsów pod X Window System
-Summary(pt.UTF-8):   Um leitor de 'news' baseado no X Window System
-Summary(ru.UTF-8):   Программа для чтения новостей в X Window System
-Summary(sk.UTF-8):   Program na čítanie diskusných skupín pre systém X Window
-Summary(sl.UTF-8):   Bralnik novi za Okna X
-Summary(sv.UTF-8):   En nyhetsläsare för X11
-Summary(zh_CN.UTF-8):   一个基于 X 窗口系统的新闻阅读器。
+Summary(cs.UTF-8):	Jednoduchý Newsový klient pro X Window System
+Summary(da.UTF-8):	En X-vinduessystembaseret nyhedslæser
+Summary(de.UTF-8):	Ein Newsreader für das X Window System
+Summary(es.UTF-8):	Lector de noticias para X Window
+Summary(fr.UTF-8):	Lecteur de nouvelles Usenet pour le système X Window
+Summary(id.UTF-8):	News reader yang berbasiskan X Window System
+Summary(is.UTF-8):	Fréttalesari fyrir X gluggakerfið
+Summary(it.UTF-8):	Un news reader basato su X Window
+Summary(ja.UTF-8):	X Window System ベースのニュースリーダー
+Summary(ko.UTF-8):	X 윈도우 시스템 기반 뉴스 읽기 프로그램
+Summary(nb.UTF-8):	En nyhetsleser for X
+Summary(pl.UTF-8):	Czytnik newsów pod X Window System
+Summary(pt.UTF-8):	Um leitor de 'news' baseado no X Window System
+Summary(ru.UTF-8):	Программа для чтения новостей в X Window System
+Summary(sk.UTF-8):	Program na čítanie diskusných skupín pre systém X Window
+Summary(sl.UTF-8):	Bralnik novi za Okna X
+Summary(sv.UTF-8):	En nyhetsläsare för X11
+Summary(zh_CN.UTF-8):	一个基于 X 窗口系统的新闻阅读器。
 Name:		xrn
 Version:	9.02
 Release:	14
